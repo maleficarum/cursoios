@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  PIzzaCreator
+//  PizzaCreator
 //
-//  Created by maleficarum on 10/11/15.
+//  Created by maleficarum on 10/12/15.
 //  Copyright © 2015 maleficarum. All rights reserved.
 //
 

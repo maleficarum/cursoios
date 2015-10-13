@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>PIzzaCreator.xcscheme</key>
+		<key>PizzaCreator.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>41548C7C1BCB4DA0007B5F9A</key>
+		<key>41956EAB1BCCB429001FF930</key>
 		<dict>
 			<key>primary</key>
 			<true/>
