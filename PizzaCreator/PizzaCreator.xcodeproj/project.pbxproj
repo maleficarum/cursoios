@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		41956EB01BCCB42A001FF930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41956EAF1BCCB42A001FF930 /* AppDelegate.swift */; };
-		41956EB21BCCB42A001FF930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41956EB11BCCB42A001FF930 /* ViewController.swift */; };
 		41956EB51BCCB42A001FF930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41956EB31BCCB42A001FF930 /* Main.storyboard */; };
 		41956EB71BCCB42A001FF930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41956EB61BCCB42A001FF930 /* Assets.xcassets */; };
 		41956EBA1BCCB42A001FF930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41956EB81BCCB42A001FF930 /* LaunchScreen.storyboard */; };
+		41956EC21BCCB4CD001FF930 /* TipoPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41956EC11BCCB4CD001FF930 /* TipoPizzaViewController.swift */; };
+		41956EC41BCCB787001FF930 /* TipoQuesoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41956EC31BCCB787001FF930 /* TipoQuesoViewController.swift */; };
+		41956EC61BCCB826001FF930 /* IngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41956EC51BCCB826001FF930 /* IngredientesViewController.swift */; };
+		41956EC81BCCB870001FF930 /* TamanoPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41956EC71BCCB870001FF930 /* TamanoPizzaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		41956EAC1BCCB42A001FF930 /* PizzaCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41956EAF1BCCB42A001FF930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41956EB11BCCB42A001FF930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41956EB41BCCB42A001FF930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41956EB61BCCB42A001FF930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41956EB91BCCB42A001FF930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41956EBB1BCCB42A001FF930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41956EC11BCCB4CD001FF930 /* TipoPizzaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TipoPizzaViewController.swift; path = src/TipoPizzaViewController.swift; sourceTree = "<group>"; };
+		41956EC31BCCB787001FF930 /* TipoQuesoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TipoQuesoViewController.swift; path = src/TipoQuesoViewController.swift; sourceTree = "<group>"; };
+		41956EC51BCCB826001FF930 /* IngredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IngredientesViewController.swift; path = src/IngredientesViewController.swift; sourceTree = "<group>"; };
+		41956EC71BCCB870001FF930 /* TamanoPizzaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TamanoPizzaViewController.swift; path = src/TamanoPizzaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				41956EAF1BCCB42A001FF930 /* AppDelegate.swift */,
-				41956EB11BCCB42A001FF930 /* ViewController.swift */,
 				41956EB31BCCB42A001FF930 /* Main.storyboard */,
+				41956EC71BCCB870001FF930 /* TamanoPizzaViewController.swift */,
+				41956EC51BCCB826001FF930 /* IngredientesViewController.swift */,
+				41956EC11BCCB4CD001FF930 /* TipoPizzaViewController.swift */,
+				41956EC31BCCB787001FF930 /* TipoQuesoViewController.swift */,
 				41956EB61BCCB42A001FF930 /* Assets.xcassets */,
 				41956EB81BCCB42A001FF930 /* LaunchScreen.storyboard */,
 				41956EBB1BCCB42A001FF930 /* Info.plist */,
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41956EB21BCCB42A001FF930 /* ViewController.swift in Sources */,
+				41956EC41BCCB787001FF930 /* TipoQuesoViewController.swift in Sources */,
+				41956EC81BCCB870001FF930 /* TamanoPizzaViewController.swift in Sources */,
+				41956EC61BCCB826001FF930 /* IngredientesViewController.swift in Sources */,
+				41956EC21BCCB4CD001FF930 /* TipoPizzaViewController.swift in Sources */,
 				41956EB01BCCB42A001FF930 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
