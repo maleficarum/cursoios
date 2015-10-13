@@ -15,18 +15,11 @@ class IngredientesViewController: UIViewController {
     var masa:String!
     var queso:String!
     
-    
-    @IBOutlet weak var tamanoLabel: UILabel!
-    @IBOutlet weak var masaLabel: UILabel!
-    @IBOutlet weak var quesoLabel: UILabel!
 
     @IBOutlet weak var ingredientesTextBox: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tamanoLabel.text = tamano
-        masaLabel.text = masa
-        quesoLabel.text = queso
     }
     
     override func didReceiveMemoryWarning() {

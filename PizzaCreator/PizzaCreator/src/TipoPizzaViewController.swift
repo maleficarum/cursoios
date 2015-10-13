@@ -11,15 +11,12 @@ import UIKit
 
 class TipoMasaPizzaViewController:UIViewController {
     
-    @IBOutlet weak var tamanoLabel: UILabel!
     @IBOutlet weak var tipoMasaSelector: UISegmentedControl!
 
     var tamano:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tamanoLabel.text = tamano
     }
     
     override func didReceiveMemoryWarning() {

@@ -14,15 +14,10 @@ class TipoQuesoPizzaViewController:UIViewController {
     var tamano:String!
     var tipoMasa:String!
     
-    @IBOutlet weak var tamanoLabel: UILabel!
-    @IBOutlet weak var tipoMasaLabel: UILabel!
     @IBOutlet weak var tipoQuesoSelector: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tamanoLabel.text = tamano
-        tipoMasaLabel.text = tipoMasa
     }
     
     override func didReceiveMemoryWarning() {

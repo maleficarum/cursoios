@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wxZ-Qw-dip">
-                                <rect key="frame" x="171" y="240" width="259" height="29"/>
+                                <rect key="frame" x="171" y="286" width="259" height="29"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="259" id="lCw-04-BVf"/>
@@ -38,13 +38,23 @@
                                     <segment title="Grande"/>
                                 </segments>
                             </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Vg-Dt-gje">
+                                <rect key="frame" x="180" y="88" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ZMy-qI-EK8"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wxZ-Qw-dip" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="176" id="8ul-uq-hWm"/>
+                            <constraint firstItem="8Vg-Dt-gje" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="423-qF-Zdy"/>
+                            <constraint firstItem="wxZ-Qw-dip" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="222" id="8ul-uq-hWm"/>
+                            <constraint firstItem="8Vg-Dt-gje" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B5i-uj-VLU"/>
                             <constraint firstItem="wxZ-Qw-dip" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DvY-AH-lnc"/>
                             <constraint firstItem="XSO-0H-7ex" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FdL-FW-uiE"/>
+                            <constraint firstItem="wxZ-Qw-dip" firstAttribute="top" secondItem="8Vg-Dt-gje" secondAttribute="bottom" constant="70" id="Gur-kM-gRW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XSO-0H-7ex" secondAttribute="bottom" constant="68" id="eTf-ZJ-m8I"/>
                         </constraints>
                     </view>
@@ -77,16 +87,16 @@
                                     <segue destination="ShF-tx-eoG" kind="show" identifier="tipoQueso" id="V6H-MO-Bnq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamano seleccionado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQj-uY-CVg">
-                                <rect key="frame" x="217" y="100" width="167" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="masa.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Aie-wD-a1K">
+                                <rect key="frame" x="180" y="96" width="240" height="128"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KXz-Fn-ESP">
-                                <rect key="frame" x="181" y="204" width="238" height="29"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KXz-Fn-ESP">
+                                <rect key="frame" x="180" y="333" width="238" height="29"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="PKM-Vd-Vcc"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Delgada"/>
                                     <segment title="Crujiente"/>
@@ -97,17 +107,18 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KXz-Fn-ESP" firstAttribute="centerX" secondItem="7Hu-MA-vIK" secondAttribute="centerX" id="2Ue-eC-2b6"/>
+                            <constraint firstItem="KXz-Fn-ESP" firstAttribute="centerX" secondItem="7Hu-MA-vIK" secondAttribute="centerX" constant="-1" id="2Ue-eC-2b6"/>
+                            <constraint firstItem="Aie-wD-a1K" firstAttribute="leading" secondItem="KXz-Fn-ESP" secondAttribute="leading" id="CX8-24-ncQ"/>
                             <constraint firstItem="hje-IF-kxb" firstAttribute="top" secondItem="Xih-aB-4d9" secondAttribute="bottom" constant="60" id="E39-Jm-CFX"/>
                             <constraint firstItem="Xih-aB-4d9" firstAttribute="centerX" secondItem="7Hu-MA-vIK" secondAttribute="centerX" id="Iw3-bh-EOg"/>
-                            <constraint firstItem="pQj-uY-CVg" firstAttribute="centerX" secondItem="7Hu-MA-vIK" secondAttribute="centerX" id="LIu-1u-6tN"/>
-                            <constraint firstItem="KXz-Fn-ESP" firstAttribute="top" secondItem="pQj-uY-CVg" secondAttribute="bottom" constant="83" id="Noa-02-1Sm"/>
-                            <constraint firstItem="pQj-uY-CVg" firstAttribute="top" secondItem="qoK-oF-HyX" secondAttribute="bottom" constant="36" id="VBl-v3-2Wo"/>
+                            <constraint firstItem="KXz-Fn-ESP" firstAttribute="centerY" secondItem="7Hu-MA-vIK" secondAttribute="centerY" constant="47" id="KZx-BY-93V"/>
+                            <constraint firstItem="Aie-wD-a1K" firstAttribute="centerX" secondItem="7Hu-MA-vIK" secondAttribute="centerX" id="XF9-wr-Cpb"/>
+                            <constraint firstItem="KXz-Fn-ESP" firstAttribute="top" secondItem="Aie-wD-a1K" secondAttribute="bottom" constant="109" id="k4g-fU-gTu"/>
+                            <constraint firstItem="Aie-wD-a1K" firstAttribute="top" secondItem="qoK-oF-HyX" secondAttribute="bottom" constant="32" id="yJn-pv-H4B"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tipo de Masa" id="VFk-0y-u1G"/>
                     <connections>
-                        <outlet property="tamanoLabel" destination="pQj-uY-CVg" id="AaM-Du-mFM"/>
                         <outlet property="tipoMasaSelector" destination="KXz-Fn-ESP" id="T4q-lo-aG1"/>
                     </connections>
                 </viewController>
@@ -135,23 +146,12 @@
                                     <segue destination="rxD-BA-zSs" kind="show" identifier="ingredientes" id="XLp-UA-yj5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamano seleccionado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fg-Mn-Wey">
-                                <rect key="frame" x="217" y="85" width="167" height="21"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DbU-By-sF6">
+                                <rect key="frame" x="72" y="300" width="477" height="29"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Masa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laR-xk-LP8">
-                                <rect key="frame" x="249" y="129" width="103" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DbU-By-sF6">
-                                <rect key="frame" x="110" y="300" width="380" height="29"/>
-                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="YO1-fv-7WO"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Mozzarella"/>
                                     <segment title="Cheddar"/>
@@ -159,24 +159,29 @@
                                     <segment title="Sin queso"/>
                                 </segments>
                             </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="queso.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NLO-FS-PvR">
+                                <rect key="frame" x="180" y="127" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="4lu-8p-36B"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jX0-7W-Fdp" firstAttribute="top" secondItem="yLI-eo-cZY" secondAttribute="bottom" constant="49" id="13q-Xp-hvp"/>
-                            <constraint firstItem="4Fg-Mn-Wey" firstAttribute="top" secondItem="F2q-Zo-cMN" secondAttribute="bottom" constant="21" id="7et-F3-bu4"/>
                             <constraint firstItem="yLI-eo-cZY" firstAttribute="centerX" secondItem="YQN-Ce-iSc" secondAttribute="centerX" id="9uT-gm-rtD"/>
-                            <constraint firstItem="4Fg-Mn-Wey" firstAttribute="centerX" secondItem="YQN-Ce-iSc" secondAttribute="centerX" id="F9s-O8-gcL"/>
                             <constraint firstAttribute="bottom" secondItem="DbU-By-sF6" secondAttribute="bottom" constant="272" id="IO0-K2-ZYg"/>
-                            <constraint firstItem="laR-xk-LP8" firstAttribute="centerX" secondItem="YQN-Ce-iSc" secondAttribute="centerX" id="Mdk-HP-QXq"/>
-                            <constraint firstItem="laR-xk-LP8" firstAttribute="top" secondItem="4Fg-Mn-Wey" secondAttribute="bottom" constant="23" id="RG6-f8-cKB"/>
-                            <constraint firstItem="DbU-By-sF6" firstAttribute="centerX" secondItem="YQN-Ce-iSc" secondAttribute="centerX" id="q1u-uN-EOX"/>
+                            <constraint firstItem="NLO-FS-PvR" firstAttribute="centerX" secondItem="YQN-Ce-iSc" secondAttribute="centerX" id="KI8-9a-13m"/>
+                            <constraint firstItem="NLO-FS-PvR" firstAttribute="top" secondItem="F2q-Zo-cMN" secondAttribute="bottom" constant="63" id="SQm-ub-yIu"/>
+                            <constraint firstItem="DbU-By-sF6" firstAttribute="top" secondItem="NLO-FS-PvR" secondAttribute="bottom" constant="45" id="Yao-af-bLf"/>
+                            <constraint firstItem="DbU-By-sF6" firstAttribute="leading" secondItem="YQN-Ce-iSc" secondAttribute="leadingMargin" constant="52" id="h06-x0-nbH"/>
+                            <constraint firstItem="DbU-By-sF6" firstAttribute="centerX" secondItem="YQN-Ce-iSc" secondAttribute="centerX" constant="10.5" id="q1u-uN-EOX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tipo de queso" id="OIc-7a-ul2"/>
                     <connections>
-                        <outlet property="tamanoLabel" destination="4Fg-Mn-Wey" id="NFb-o6-hto"/>
-                        <outlet property="tipoMasaLabel" destination="laR-xk-LP8" id="I0V-zK-jFb"/>
                         <outlet property="tipoQuesoSelector" destination="DbU-By-sF6" id="6qQ-YB-ktw"/>
                     </connections>
                 </viewController>
@@ -196,41 +201,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamano seleccionado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQM-9g-W0i">
-                                <rect key="frame" x="217" y="88" width="167" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de masa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLr-o0-vAy">
-                                <rect key="frame" x="249" y="128" width="103" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de queso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="252-gG-0fP">
-                                <rect key="frame" x="246" y="171" width="109" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="eXA-7p-zZB">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" indicatorStyle="black" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="eXA-7p-zZB">
                                 <rect key="frame" x="78" y="249" width="444" height="286"/>
                                 <animations/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredientes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="up1-k1-yeX">
-                                <rect key="frame" x="78" y="220" width="100" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxo-2a-Ui6">
                                 <rect key="frame" x="267" y="550" width="67" height="30"/>
                                 <animations/>
@@ -239,32 +216,30 @@
                                     <segue destination="66V-eM-Jvs" kind="show" identifier="confirmacion" id="cxe-vz-vzK"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ingredientes.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="J7e-Vf-FCz">
+                                <rect key="frame" x="180" y="72" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ifV-By-jqB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eXA-7p-zZB" firstAttribute="leading" secondItem="UHd-sI-uag" secondAttribute="leadingMargin" constant="58" id="0kQ-mK-WcF"/>
-                            <constraint firstItem="up1-k1-yeX" firstAttribute="leading" secondItem="eXA-7p-zZB" secondAttribute="leading" id="43k-qW-aw6"/>
                             <constraint firstItem="eXA-7p-zZB" firstAttribute="centerX" secondItem="UHd-sI-uag" secondAttribute="centerX" id="83o-xV-9SC"/>
+                            <constraint firstItem="J7e-Vf-FCz" firstAttribute="top" secondItem="FaO-7l-BL6" secondAttribute="bottom" constant="8" symbolic="YES" id="8o7-2k-Xcd"/>
                             <constraint firstItem="snr-68-dtR" firstAttribute="top" secondItem="eXA-7p-zZB" secondAttribute="bottom" constant="65" id="9yY-tB-5Rd"/>
                             <constraint firstAttribute="bottom" secondItem="Vxo-2a-Ui6" secondAttribute="bottom" constant="20" symbolic="YES" id="AHv-z9-vJW"/>
-                            <constraint firstItem="252-gG-0fP" firstAttribute="top" secondItem="gLr-o0-vAy" secondAttribute="bottom" constant="22" id="HuW-mK-5qh"/>
                             <constraint firstItem="Vxo-2a-Ui6" firstAttribute="centerX" secondItem="eXA-7p-zZB" secondAttribute="centerX" id="Pi3-7J-KgM"/>
-                            <constraint firstItem="eXA-7p-zZB" firstAttribute="top" secondItem="252-gG-0fP" secondAttribute="bottom" constant="57" id="WtA-9f-Iq5"/>
-                            <constraint firstItem="eXA-7p-zZB" firstAttribute="top" secondItem="up1-k1-yeX" secondAttribute="bottom" constant="8" symbolic="YES" id="Z6W-5g-58O"/>
-                            <constraint firstItem="gLr-o0-vAy" firstAttribute="top" secondItem="xQM-9g-W0i" secondAttribute="bottom" constant="19" id="jpE-zI-Yhm"/>
-                            <constraint firstItem="gLr-o0-vAy" firstAttribute="centerX" secondItem="UHd-sI-uag" secondAttribute="centerX" id="kll-ED-Ysc"/>
-                            <constraint firstItem="xQM-9g-W0i" firstAttribute="top" secondItem="FaO-7l-BL6" secondAttribute="bottom" constant="24" id="omR-DM-lsX"/>
-                            <constraint firstItem="xQM-9g-W0i" firstAttribute="centerX" secondItem="UHd-sI-uag" secondAttribute="centerX" id="pcY-UM-JrJ"/>
-                            <constraint firstItem="252-gG-0fP" firstAttribute="centerX" secondItem="UHd-sI-uag" secondAttribute="centerX" id="tDp-px-P08"/>
+                            <constraint firstItem="eXA-7p-zZB" firstAttribute="top" secondItem="J7e-Vf-FCz" secondAttribute="bottom" constant="49" id="Sd2-Bt-hVT"/>
+                            <constraint firstItem="J7e-Vf-FCz" firstAttribute="centerX" secondItem="UHd-sI-uag" secondAttribute="centerX" id="X3X-y2-RcZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ingredientes" id="yex-U2-3UG"/>
                     <connections>
                         <outlet property="ingredientesTextBox" destination="eXA-7p-zZB" id="aBR-lK-7OH"/>
-                        <outlet property="masaLabel" destination="gLr-o0-vAy" id="XXs-Wc-5p4"/>
-                        <outlet property="quesoLabel" destination="252-gG-0fP" id="il8-Pk-8Gw"/>
-                        <outlet property="tamanoLabel" destination="xQM-9g-W0i" id="0k3-cj-AVu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBf-EA-0U8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -392,4 +367,10 @@
             <point key="canvasLocation" x="404" y="1089"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ingredientes.jpg" width="237" height="212"/>
+        <image name="masa.jpg" width="239" height="211"/>
+        <image name="pizza.png" width="254" height="199"/>
+        <image name="queso.jpg" width="247" height="204"/>
+    </resources>
 </document>

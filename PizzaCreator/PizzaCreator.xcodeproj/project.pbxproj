@@ -10,6 +10,10 @@
 		411EC0901BCCBDC6003FF6D2 /* TamanoPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EC08F1BCCBDC6003FF6D2 /* TamanoPizzaViewController.swift */; };
 		411EC0921BCCC2FD003FF6D2 /* IngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EC0911BCCC2FD003FF6D2 /* IngredientesViewController.swift */; };
 		414CF16B1BCD6136008D9E43 /* ConfirmacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414CF16A1BCD6136008D9E43 /* ConfirmacionViewController.swift */; };
+		414CF16E1BCD642D008D9E43 /* pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = 414CF16D1BCD642D008D9E43 /* pizza.png */; };
+		414CF1701BCD6489008D9E43 /* queso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 414CF16F1BCD6489008D9E43 /* queso.jpg */; };
+		414CF1721BCD655C008D9E43 /* masa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 414CF1711BCD655C008D9E43 /* masa.jpg */; };
+		414CF1741BCD65E1008D9E43 /* ingredientes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 414CF1731BCD65E1008D9E43 /* ingredientes.jpg */; };
 		41956EB01BCCB42A001FF930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41956EAF1BCCB42A001FF930 /* AppDelegate.swift */; };
 		41956EB51BCCB42A001FF930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41956EB31BCCB42A001FF930 /* Main.storyboard */; };
 		41956EB71BCCB42A001FF930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41956EB61BCCB42A001FF930 /* Assets.xcassets */; };
@@ -22,6 +26,10 @@
 		411EC08F1BCCBDC6003FF6D2 /* TamanoPizzaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TamanoPizzaViewController.swift; path = PizzaCreator/src/TamanoPizzaViewController.swift; sourceTree = "<group>"; };
 		411EC0911BCCC2FD003FF6D2 /* IngredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IngredientesViewController.swift; path = PizzaCreator/src/IngredientesViewController.swift; sourceTree = "<group>"; };
 		414CF16A1BCD6136008D9E43 /* ConfirmacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfirmacionViewController.swift; path = src/ConfirmacionViewController.swift; sourceTree = "<group>"; };
+		414CF16D1BCD642D008D9E43 /* pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizza.png; sourceTree = "<group>"; };
+		414CF16F1BCD6489008D9E43 /* queso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = queso.jpg; sourceTree = "<group>"; };
+		414CF1711BCD655C008D9E43 /* masa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = masa.jpg; sourceTree = "<group>"; };
+		414CF1731BCD65E1008D9E43 /* ingredientes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ingredientes.jpg; sourceTree = "<group>"; };
 		41956EAC1BCCB42A001FF930 /* PizzaCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41956EAF1BCCB42A001FF930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41956EB41BCCB42A001FF930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,9 +51,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		414CF16C1BCD641F008D9E43 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				414CF1711BCD655C008D9E43 /* masa.jpg */,
+				414CF1731BCD65E1008D9E43 /* ingredientes.jpg */,
+				414CF16F1BCD6489008D9E43 /* queso.jpg */,
+				414CF16D1BCD642D008D9E43 /* pizza.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		41956EA31BCCB429001FF930 = {
 			isa = PBXGroup;
 			children = (
+				414CF16C1BCD641F008D9E43 /* images */,
 				411EC0911BCCC2FD003FF6D2 /* IngredientesViewController.swift */,
 				411EC08F1BCCBDC6003FF6D2 /* TamanoPizzaViewController.swift */,
 				41956EAE1BCCB42A001FF930 /* PizzaCreator */,
@@ -134,8 +154,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414CF1741BCD65E1008D9E43 /* ingredientes.jpg in Resources */,
+				414CF16E1BCD642D008D9E43 /* pizza.png in Resources */,
+				414CF1721BCD655C008D9E43 /* masa.jpg in Resources */,
 				41956EBA1BCCB42A001FF930 /* LaunchScreen.storyboard in Resources */,
 				41956EB71BCCB42A001FF930 /* Assets.xcassets in Resources */,
+				414CF1701BCD6489008D9E43 /* queso.jpg in Resources */,
 				41956EB51BCCB42A001FF930 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
