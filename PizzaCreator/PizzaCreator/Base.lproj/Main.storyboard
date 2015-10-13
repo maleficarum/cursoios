@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSO-0H-7ex">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSO-0H-7ex">
                                 <rect key="frame" x="268" y="502" width="64" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Siguiente"/>
@@ -25,15 +25,32 @@
                                     <segue destination="Co0-d4-Rws" kind="show" identifier="tipoMasa" id="oJH-T0-sAX"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wxZ-Qw-dip">
+                                <rect key="frame" x="171" y="240" width="259" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="lCw-04-BVf"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Pequena"/>
+                                    <segment title="Mediana"/>
+                                    <segment title="Grande"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wxZ-Qw-dip" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="176" id="8ul-uq-hWm"/>
+                            <constraint firstItem="wxZ-Qw-dip" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DvY-AH-lnc"/>
                             <constraint firstItem="XSO-0H-7ex" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FdL-FW-uiE"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XSO-0H-7ex" secondAttribute="bottom" constant="42" id="eTf-ZJ-m8I"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XSO-0H-7ex" secondAttribute="bottom" constant="68" id="eTf-ZJ-m8I"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tamano de pizza" id="GcY-Pi-jnv"/>
+                    <connections>
+                        <outlet property="tamanoSelector" destination="wxZ-Qw-dip" id="x6x-SR-xsJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,19 +83,31 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KXz-Fn-ESP">
+                                <rect key="frame" x="181" y="204" width="238" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="Delgada"/>
+                                    <segment title="Crujiente"/>
+                                    <segment title="Gruesa"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="KXz-Fn-ESP" firstAttribute="centerX" secondItem="7Hu-MA-vIK" secondAttribute="centerX" id="2Ue-eC-2b6"/>
                             <constraint firstItem="hje-IF-kxb" firstAttribute="top" secondItem="Xih-aB-4d9" secondAttribute="bottom" constant="60" id="E39-Jm-CFX"/>
                             <constraint firstItem="Xih-aB-4d9" firstAttribute="centerX" secondItem="7Hu-MA-vIK" secondAttribute="centerX" id="Iw3-bh-EOg"/>
                             <constraint firstItem="pQj-uY-CVg" firstAttribute="centerX" secondItem="7Hu-MA-vIK" secondAttribute="centerX" id="LIu-1u-6tN"/>
+                            <constraint firstItem="KXz-Fn-ESP" firstAttribute="top" secondItem="pQj-uY-CVg" secondAttribute="bottom" constant="83" id="Noa-02-1Sm"/>
                             <constraint firstItem="pQj-uY-CVg" firstAttribute="top" secondItem="qoK-oF-HyX" secondAttribute="bottom" constant="36" id="VBl-v3-2Wo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tipo de Masa" id="VFk-0y-u1G"/>
                     <connections>
                         <outlet property="tamanoLabel" destination="pQj-uY-CVg" id="AaM-Du-mFM"/>
+                        <outlet property="tipoMasaSelector" destination="KXz-Fn-ESP" id="T4q-lo-aG1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOF-IT-mda" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -119,6 +148,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DbU-By-sF6">
+                                <rect key="frame" x="110" y="300" width="380" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="Mozzarella"/>
+                                    <segment title="Cheddar"/>
+                                    <segment title="Parmesano"/>
+                                    <segment title="Sin queso"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -127,11 +166,18 @@
                             <constraint firstItem="4Fg-Mn-Wey" firstAttribute="top" secondItem="F2q-Zo-cMN" secondAttribute="bottom" constant="21" id="7et-F3-bu4"/>
                             <constraint firstItem="yLI-eo-cZY" firstAttribute="centerX" secondItem="YQN-Ce-iSc" secondAttribute="centerX" id="9uT-gm-rtD"/>
                             <constraint firstItem="4Fg-Mn-Wey" firstAttribute="centerX" secondItem="YQN-Ce-iSc" secondAttribute="centerX" id="F9s-O8-gcL"/>
+                            <constraint firstAttribute="bottom" secondItem="DbU-By-sF6" secondAttribute="bottom" constant="272" id="IO0-K2-ZYg"/>
                             <constraint firstItem="laR-xk-LP8" firstAttribute="centerX" secondItem="YQN-Ce-iSc" secondAttribute="centerX" id="Mdk-HP-QXq"/>
                             <constraint firstItem="laR-xk-LP8" firstAttribute="top" secondItem="4Fg-Mn-Wey" secondAttribute="bottom" constant="23" id="RG6-f8-cKB"/>
+                            <constraint firstItem="DbU-By-sF6" firstAttribute="centerX" secondItem="YQN-Ce-iSc" secondAttribute="centerX" id="q1u-uN-EOX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tipo de queso" id="OIc-7a-ul2"/>
+                    <connections>
+                        <outlet property="tamanoLabel" destination="4Fg-Mn-Wey" id="NFb-o6-hto"/>
+                        <outlet property="tipoMasaLabel" destination="laR-xk-LP8" id="I0V-zK-jFb"/>
+                        <outlet property="tipoQuesoSelector" destination="DbU-By-sF6" id="6qQ-YB-ktw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xeq-0J-oc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

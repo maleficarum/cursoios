@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411EC0901BCCBDC6003FF6D2 /* TamanoPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EC08F1BCCBDC6003FF6D2 /* TamanoPizzaViewController.swift */; };
+		411EC0921BCCC2FD003FF6D2 /* IngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EC0911BCCC2FD003FF6D2 /* IngredientesViewController.swift */; };
 		41956EB01BCCB42A001FF930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41956EAF1BCCB42A001FF930 /* AppDelegate.swift */; };
 		41956EB51BCCB42A001FF930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41956EB31BCCB42A001FF930 /* Main.storyboard */; };
 		41956EB71BCCB42A001FF930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41956EB61BCCB42A001FF930 /* Assets.xcassets */; };
 		41956EBA1BCCB42A001FF930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41956EB81BCCB42A001FF930 /* LaunchScreen.storyboard */; };
 		41956EC21BCCB4CD001FF930 /* TipoPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41956EC11BCCB4CD001FF930 /* TipoPizzaViewController.swift */; };
 		41956EC41BCCB787001FF930 /* TipoQuesoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41956EC31BCCB787001FF930 /* TipoQuesoViewController.swift */; };
-		41956EC61BCCB826001FF930 /* IngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41956EC51BCCB826001FF930 /* IngredientesViewController.swift */; };
-		41956EC81BCCB870001FF930 /* TamanoPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41956EC71BCCB870001FF930 /* TamanoPizzaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		411EC08F1BCCBDC6003FF6D2 /* TamanoPizzaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TamanoPizzaViewController.swift; path = PizzaCreator/src/TamanoPizzaViewController.swift; sourceTree = "<group>"; };
+		411EC0911BCCC2FD003FF6D2 /* IngredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IngredientesViewController.swift; path = PizzaCreator/src/IngredientesViewController.swift; sourceTree = "<group>"; };
 		41956EAC1BCCB42A001FF930 /* PizzaCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41956EAF1BCCB42A001FF930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41956EB41BCCB42A001FF930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,8 +28,6 @@
 		41956EBB1BCCB42A001FF930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41956EC11BCCB4CD001FF930 /* TipoPizzaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TipoPizzaViewController.swift; path = src/TipoPizzaViewController.swift; sourceTree = "<group>"; };
 		41956EC31BCCB787001FF930 /* TipoQuesoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TipoQuesoViewController.swift; path = src/TipoQuesoViewController.swift; sourceTree = "<group>"; };
-		41956EC51BCCB826001FF930 /* IngredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IngredientesViewController.swift; path = src/IngredientesViewController.swift; sourceTree = "<group>"; };
-		41956EC71BCCB870001FF930 /* TamanoPizzaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TamanoPizzaViewController.swift; path = src/TamanoPizzaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +44,8 @@
 		41956EA31BCCB429001FF930 = {
 			isa = PBXGroup;
 			children = (
+				411EC0911BCCC2FD003FF6D2 /* IngredientesViewController.swift */,
+				411EC08F1BCCBDC6003FF6D2 /* TamanoPizzaViewController.swift */,
 				41956EAE1BCCB42A001FF930 /* PizzaCreator */,
 				41956EAD1BCCB42A001FF930 /* Products */,
 			);
@@ -62,8 +64,6 @@
 			children = (
 				41956EAF1BCCB42A001FF930 /* AppDelegate.swift */,
 				41956EB31BCCB42A001FF930 /* Main.storyboard */,
-				41956EC71BCCB870001FF930 /* TamanoPizzaViewController.swift */,
-				41956EC51BCCB826001FF930 /* IngredientesViewController.swift */,
 				41956EC11BCCB4CD001FF930 /* TipoPizzaViewController.swift */,
 				41956EC31BCCB787001FF930 /* TipoQuesoViewController.swift */,
 				41956EB61BCCB42A001FF930 /* Assets.xcassets */,
@@ -145,8 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				41956EC41BCCB787001FF930 /* TipoQuesoViewController.swift in Sources */,
-				41956EC81BCCB870001FF930 /* TamanoPizzaViewController.swift in Sources */,
-				41956EC61BCCB826001FF930 /* IngredientesViewController.swift in Sources */,
+				411EC0901BCCBDC6003FF6D2 /* TamanoPizzaViewController.swift in Sources */,
+				411EC0921BCCC2FD003FF6D2 /* IngredientesViewController.swift in Sources */,
 				41956EC21BCCB4CD001FF930 /* TipoPizzaViewController.swift in Sources */,
 				41956EB01BCCB42A001FF930 /* AppDelegate.swift in Sources */,
 			);
@@ -298,6 +298,7 @@
 				41956EC01BCCB42A001FF930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
