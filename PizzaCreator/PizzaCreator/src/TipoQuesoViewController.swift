@@ -46,8 +46,9 @@ class TipoQuesoPizzaViewController:UIViewController {
             
             print("TIPO queso \(tipoQuesoSelector.selectedSegmentIndex) \(tipoQueso)" )
             
-//            (segue.destinationViewController as! TipoQuesoPizzaViewController).tamano = tamano
-//            (segue.destinationViewController as! TipoQuesoPizzaViewController).tipoMasa = tipoMasa
+            (segue.destinationViewController as! IngredientesViewController).tamano = tamano
+            (segue.destinationViewController as! IngredientesViewController).masa = tipoMasa
+            (segue.destinationViewController as! IngredientesViewController).queso = tipoQueso
         }
     }
     

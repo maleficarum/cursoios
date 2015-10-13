@@ -11,10 +11,21 @@ import UIKit
 
 class IngredientesViewController: UIViewController {
     
+    var tamano:String!
+    var masa:String!
+    var queso:String!
+    
+    
+    @IBOutlet weak var tamanoLabel: UILabel!
+    @IBOutlet weak var masaLabel: UILabel!
+    @IBOutlet weak var quesoLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        tamanoLabel.text = tamano
+        masaLabel.text = masa
+        quesoLabel.text = queso
     }
     
     override func didReceiveMemoryWarning() {

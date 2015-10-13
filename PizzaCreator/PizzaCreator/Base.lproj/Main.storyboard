@@ -210,7 +210,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de queso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="252-gG-0fP">
-                                <rect key="frame" x="246" y="174" width="109" height="21"/>
+                                <rect key="frame" x="246" y="171" width="109" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -220,7 +220,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="252-gG-0fP" firstAttribute="top" secondItem="gLr-o0-vAy" secondAttribute="bottom" constant="25" id="HuW-mK-5qh"/>
+                            <constraint firstItem="252-gG-0fP" firstAttribute="top" secondItem="gLr-o0-vAy" secondAttribute="bottom" constant="22" id="HuW-mK-5qh"/>
                             <constraint firstItem="gLr-o0-vAy" firstAttribute="top" secondItem="xQM-9g-W0i" secondAttribute="bottom" constant="19" id="jpE-zI-Yhm"/>
                             <constraint firstItem="gLr-o0-vAy" firstAttribute="centerX" secondItem="UHd-sI-uag" secondAttribute="centerX" id="kll-ED-Ysc"/>
                             <constraint firstItem="xQM-9g-W0i" firstAttribute="top" secondItem="FaO-7l-BL6" secondAttribute="bottom" constant="24" id="omR-DM-lsX"/>
@@ -229,6 +229,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ingredientes" id="yex-U2-3UG"/>
+                    <connections>
+                        <outlet property="masaLabel" destination="gLr-o0-vAy" id="XXs-Wc-5p4"/>
+                        <outlet property="quesoLabel" destination="252-gG-0fP" id="il8-Pk-8Gw"/>
+                        <outlet property="tamanoLabel" destination="xQM-9g-W0i" id="0k3-cj-AVu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBf-EA-0U8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
