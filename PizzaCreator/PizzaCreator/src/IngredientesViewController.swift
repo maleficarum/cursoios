@@ -20,6 +20,7 @@ class IngredientesViewController: UIViewController {
     @IBOutlet weak var masaLabel: UILabel!
     @IBOutlet weak var quesoLabel: UILabel!
 
+    @IBOutlet weak var ingredientesTextBox: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +33,17 @@ class IngredientesViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "confirmacion") {
+            
+            (segue.destinationViewController as! ConfirmacionViewController).tamanoPizza = tamano
+            (segue.destinationViewController as! ConfirmacionViewController).tipoMasa = masa
+            (segue.destinationViewController as! ConfirmacionViewController).tipoQueso = queso
+            (segue.destinationViewController as! ConfirmacionViewController).ingredientes = ingredientesTextBox.text
+        }
+    }
+    
         
 }
 
