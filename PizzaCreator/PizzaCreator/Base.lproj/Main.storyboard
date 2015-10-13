@@ -17,12 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSO-0H-7ex">
-                                <rect key="frame" x="268" y="528" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSO-0H-7ex">
+                                <rect key="frame" x="268" y="502" width="64" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Siguiente"/>
                                 <connections>
-                                    <segue destination="Co0-d4-Rws" kind="show" id="oJH-T0-sAX"/>
+                                    <segue destination="Co0-d4-Rws" kind="show" identifier="tipoMasa" id="oJH-T0-sAX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,22 +52,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xih-aB-4d9">
-                                <rect key="frame" x="268" y="499" width="64" height="30"/>
+                                <rect key="frame" x="268" y="510" width="64" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Siguiente"/>
                                 <connections>
-                                    <segue destination="ShF-tx-eoG" kind="show" id="V6H-MO-Bnq"/>
+                                    <segue destination="ShF-tx-eoG" kind="show" identifier="tipoQueso" id="V6H-MO-Bnq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamano seleccionado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQj-uY-CVg">
+                                <rect key="frame" x="217" y="100" width="167" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hje-IF-kxb" firstAttribute="top" secondItem="Xih-aB-4d9" secondAttribute="bottom" constant="71" id="E39-Jm-CFX"/>
+                            <constraint firstItem="hje-IF-kxb" firstAttribute="top" secondItem="Xih-aB-4d9" secondAttribute="bottom" constant="60" id="E39-Jm-CFX"/>
                             <constraint firstItem="Xih-aB-4d9" firstAttribute="centerX" secondItem="7Hu-MA-vIK" secondAttribute="centerX" id="Iw3-bh-EOg"/>
+                            <constraint firstItem="pQj-uY-CVg" firstAttribute="centerX" secondItem="7Hu-MA-vIK" secondAttribute="centerX" id="LIu-1u-6tN"/>
+                            <constraint firstItem="pQj-uY-CVg" firstAttribute="top" secondItem="qoK-oF-HyX" secondAttribute="bottom" constant="36" id="VBl-v3-2Wo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tipo de Masa" id="VFk-0y-u1G"/>
+                    <connections>
+                        <outlet property="tamanoLabel" destination="pQj-uY-CVg" id="AaM-Du-mFM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOF-IT-mda" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,19 +98,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-eo-cZY">
-                                <rect key="frame" x="268" y="468" width="64" height="30"/>
+                                <rect key="frame" x="268" y="521" width="64" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Siguiente"/>
                                 <connections>
-                                    <segue destination="rxD-BA-zSs" kind="show" id="XLp-UA-yj5"/>
+                                    <segue destination="rxD-BA-zSs" kind="show" identifier="ingredientes" id="XLp-UA-yj5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamano seleccionado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fg-Mn-Wey">
+                                <rect key="frame" x="217" y="85" width="167" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Masa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laR-xk-LP8">
+                                <rect key="frame" x="249" y="129" width="103" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jX0-7W-Fdp" firstAttribute="top" secondItem="yLI-eo-cZY" secondAttribute="bottom" constant="102" id="13q-Xp-hvp"/>
+                            <constraint firstItem="jX0-7W-Fdp" firstAttribute="top" secondItem="yLI-eo-cZY" secondAttribute="bottom" constant="49" id="13q-Xp-hvp"/>
+                            <constraint firstItem="4Fg-Mn-Wey" firstAttribute="top" secondItem="F2q-Zo-cMN" secondAttribute="bottom" constant="21" id="7et-F3-bu4"/>
                             <constraint firstItem="yLI-eo-cZY" firstAttribute="centerX" secondItem="YQN-Ce-iSc" secondAttribute="centerX" id="9uT-gm-rtD"/>
+                            <constraint firstItem="4Fg-Mn-Wey" firstAttribute="centerX" secondItem="YQN-Ce-iSc" secondAttribute="centerX" id="F9s-O8-gcL"/>
+                            <constraint firstItem="laR-xk-LP8" firstAttribute="centerX" secondItem="YQN-Ce-iSc" secondAttribute="centerX" id="Mdk-HP-QXq"/>
+                            <constraint firstItem="laR-xk-LP8" firstAttribute="top" secondItem="4Fg-Mn-Wey" secondAttribute="bottom" constant="23" id="RG6-f8-cKB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tipo de queso" id="OIc-7a-ul2"/>
@@ -118,8 +148,39 @@
                     <view key="view" contentMode="scaleToFill" id="UHd-sI-uag">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamano seleccionado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQM-9g-W0i">
+                                <rect key="frame" x="217" y="88" width="167" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de masa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLr-o0-vAy">
+                                <rect key="frame" x="249" y="128" width="103" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de queso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="252-gG-0fP">
+                                <rect key="frame" x="246" y="174" width="109" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="252-gG-0fP" firstAttribute="top" secondItem="gLr-o0-vAy" secondAttribute="bottom" constant="25" id="HuW-mK-5qh"/>
+                            <constraint firstItem="gLr-o0-vAy" firstAttribute="top" secondItem="xQM-9g-W0i" secondAttribute="bottom" constant="19" id="jpE-zI-Yhm"/>
+                            <constraint firstItem="gLr-o0-vAy" firstAttribute="centerX" secondItem="UHd-sI-uag" secondAttribute="centerX" id="kll-ED-Ysc"/>
+                            <constraint firstItem="xQM-9g-W0i" firstAttribute="top" secondItem="FaO-7l-BL6" secondAttribute="bottom" constant="24" id="omR-DM-lsX"/>
+                            <constraint firstItem="xQM-9g-W0i" firstAttribute="centerX" secondItem="UHd-sI-uag" secondAttribute="centerX" id="pcY-UM-JrJ"/>
+                            <constraint firstItem="252-gG-0fP" firstAttribute="centerX" secondItem="UHd-sI-uag" secondAttribute="centerX" id="tDp-px-P08"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ingredientes" id="yex-U2-3UG"/>
                 </viewController>

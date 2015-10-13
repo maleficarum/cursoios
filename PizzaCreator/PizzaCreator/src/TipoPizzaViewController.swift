@@ -11,9 +11,13 @@ import UIKit
 
 class TipoMasaPizzaViewController:UIViewController {
     
+    @IBOutlet weak var tamanoLabel: UILabel!
+    var tamano:String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        tamanoLabel.text = tamano
     }
     
     override func didReceiveMemoryWarning() {
